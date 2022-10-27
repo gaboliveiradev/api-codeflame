@@ -1,7 +1,14 @@
 <?php
+
 namespace App\Controller;
 
 abstract class Controller {
+
+    /*
+     * Este metodo render, é responsável por exibir suas views, basta chamar-lo 
+     * utilizando [parent::render($view, $model);]. E passar seus respectivos
+     * parâmetros, sendo o primeiro a view, e o segundo a model caso existir.
+    */
     protected static function render($view, $model = null) {
         $arquivo = "./View/modules/$view.php";
 
@@ -12,7 +19,7 @@ abstract class Controller {
     }
 
     /*
-     * Está função é responsável por verificar se o usuário
+     * Este metodo é responsável por verificar se o usuário
      * está logado. Você poderá utilizar-la em páginas que deseja proteger. Chame está função
      * em sua Controller utilizando [parent::isAuthenticated();].
      */
