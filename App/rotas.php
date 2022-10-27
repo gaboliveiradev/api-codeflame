@@ -8,6 +8,11 @@
             
         break;
 
+        // http://localhost:8000/api/config
+        case "/api/config":
+        
+        break;
+
         // http://localhost:8000/api/rotas
         case "/api/rotas":
 
