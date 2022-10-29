@@ -7,7 +7,7 @@ class ReadModelService {
     public $arr_rows = [];
 
     public function readModel() {
-        $arq = fopen("./Template/Model/Model.php", "r");
+        $arq = fopen("./Template/App/Model/Model.php", "r");
         $i = 0;
 
         while(!feof($arq)) {

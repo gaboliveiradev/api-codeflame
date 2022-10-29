@@ -7,7 +7,7 @@ class ReadDaoService {
     public $arr_rows = [];
 
     public function readDAO() {
-        $arq = fopen("./Template/DAO/DAO.php", "r");
+        $arq = fopen("./Template/App/DAO/DAO.php", "r");
         $i = 0;
 
         while(!feof($arq)) {

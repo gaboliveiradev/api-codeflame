@@ -7,7 +7,7 @@ class ReadControllerService {
     public $arr_rows = [];
 
     public function readController() {
-        $arq = fopen("./Template/Controller/Controller.php", "r");
+        $arq = fopen("./Template/App/Controller/Controller.php", "r");
         $i = 0;
 
         while(!feof($arq)) {

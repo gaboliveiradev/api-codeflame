@@ -7,7 +7,7 @@ class ReadWelcomeControllerService {
     public $arr_rows = [];
 
     public function readWelcomeController() {
-        $arq = fopen("./Template/Controller\WelcomeController.php", "r");
+        $arq = fopen("./Template/App/Controller/WelcomeController.php", "r");
         $i = 0;
 
         while(!feof($arq)) {

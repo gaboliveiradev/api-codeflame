@@ -7,7 +7,7 @@ class ReadConfigService {
     public $arr_rows = [];
 
     public function readConfig() {
-        $arq = fopen("./Template/config.php", "r");
+        $arq = fopen("./Template/App/config.php", "r");
         $i = 0;
 
         while(!feof($arq)) {

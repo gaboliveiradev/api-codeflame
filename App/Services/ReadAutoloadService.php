@@ -7,7 +7,7 @@ class ReadAutoloadService {
     public $arr_rows = [];
 
     public function readAutoload() {
-        $arq = fopen("./Template/autoload.php", "r");
+        $arq = fopen("./Template/App/autoload.php", "r");
         $i = 0;
 
         while(!feof($arq)) {

@@ -7,7 +7,7 @@ class ReadRotasService {
     public $arr_rows = [];
 
     public function readRotas() {
-        $arq = fopen("./Template/rotas.php", "r");
+        $arq = fopen("./Template/App/rotas.php", "r");
         $i = 0;
 
         while(!feof($arq)) {

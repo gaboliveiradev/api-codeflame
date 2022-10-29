@@ -7,7 +7,7 @@ class ReadIndexService {
     public $arr_rows = [];
 
     public function readIndex() {
-        $arq = fopen("./Template/index.php", "r");
+        $arq = fopen("./Template/App/index.php", "r");
         $i = 0;
 
         while(!feof($arq)) {
