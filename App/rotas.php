@@ -6,6 +6,7 @@ use App\Controller\{
     ControllerController,
     DaoController,
     IndexController,
+    ModelController,
     RotasController,
     WelcomeControllerController
 };
@@ -48,5 +49,10 @@ switch($parse_uri) {
     // http://localhost:8000/api/welcome-controller
     case "/api/welcome-controller":
         WelcomeControllerController::returnRows();
+    break;
+
+    // http://localhost:8000/api/model
+    case "/api/model":
+        ModelController::returnRows();
     break;
 }
