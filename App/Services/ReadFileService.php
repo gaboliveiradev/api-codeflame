@@ -18,7 +18,9 @@ class ReadFileService {
 
         fclose($file);
 
-        return json_encode($arr_rows);
+        return json_encode([
+            "all_file_rows" => $arr_rows,
+        ]);
     }
     
 }
