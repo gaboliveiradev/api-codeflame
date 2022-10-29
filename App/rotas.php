@@ -10,6 +10,7 @@ use App\Controller\{
     ModelController,
     ReadBootstrapController,
     RotasController,
+    ViewWelcomeController,
     WelcomeControllerController
 };
 use App\Services\ReadControllerService;
@@ -78,4 +79,9 @@ switch($parse_uri) {
         IncludeController::returnRowsJsConfig();
     break;
 
+    // http://localhost:8000/api/view-welcome
+    case "/api/view-welcome":
+        ViewWelcomeController::returnRows();
+    break;
+    
 }
