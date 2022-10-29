@@ -10,4 +10,5 @@ class AutoloadController {
         $service = new ReadAutoloadService();
         echo $service->readAutoload();
     }
+    
 }
