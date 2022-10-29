@@ -20,4 +20,5 @@ class ReadConfigService {
 
         return json_encode($arr_rows);
     }
+    
 }

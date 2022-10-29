@@ -5,6 +5,7 @@ use App\Controller\{
     ConfigController,
     ControllerController,
     DaoController,
+    IncludeController,
     IndexController,
     ModelController,
     ReadBootstrapController,
@@ -66,4 +67,15 @@ switch($parse_uri) {
     case "/api/bootstrap-js":
         ReadBootstrapController::returnRowsJs();
     break;
+
+    // http://localhost:8000/api/css-config
+    case "/api/css-config":
+        IncludeController::returnRowsCssConfig();
+    break;
+
+    // http://localhost:8000/api/js-config
+    case "/api/js-config":
+        IncludeController::returnRowsJsConfig();
+    break;
+
 }
