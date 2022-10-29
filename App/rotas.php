@@ -1,25 +1,30 @@
 <?php
-    $parse_uri = parse_url($_SERVER['REQUESTE_URI'], PHP_URL_PATH);
 
-    switch($parse_uri) {
+use App\Controller\{
+    AutoloadController
+};
 
-        // http://localhost:8000/api/index
-        case "/api/index":
-            
-        break;
+$parse_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-        // http://localhost:8000/api/config
-        case "/api/config":
+switch($parse_uri) {
+
+    // http://localhost:8000/api/index
+    case "/api/index":
         
-        break;
+    break;
 
-        // http://localhost:8000/api/rotas
-        case "/api/rotas":
+    // http://localhost:8000/api/config
+    case "/api/config":
+    
+    break;
 
-        break;
+    // http://localhost:8000/api/rotas
+    case "/api/rotas":
 
-        // http://localhost:8000/api/autoload
-        case "/api/autoload":
+    break;
 
-        break;
-    }
+    // http://localhost:8000/api/autoload
+    case "/api/autoload":
+        AutoloadController::returnRows();
+    break;
+}
