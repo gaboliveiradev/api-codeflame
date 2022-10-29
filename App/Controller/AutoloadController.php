@@ -2,12 +2,12 @@
 
 namespace App\Controller;
 
-use App\Services\ReadFileService;
+use App\Services\ReadAutoloadService;
 
 class AutoloadController {
 
     public static function returnRows() {
-        $service = new ReadFileService();
+        $service = new ReadAutoloadService();
         echo $service->readAutoload();
     }
 }
