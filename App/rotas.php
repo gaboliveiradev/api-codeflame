@@ -4,7 +4,7 @@ use App\Controller\{
     AutoloadController,
     ConfigController,
     ControllerController,
-    DAOController,
+    DaoController,
     IndexController,
     RotasController
 };
@@ -36,7 +36,7 @@ switch($parse_uri) {
 
     // http://localhost:8000/api/dao
     case "/api/dao":
-        DAOController::returnRows();
+        DaoController::returnRows();
     break;
 
     // http://localhost:8000/api/controller
@@ -44,8 +44,8 @@ switch($parse_uri) {
         ControllerController::returnRows();
     break;
 
-    // http://localhost:8000/api/welcome_controller
-    case "/api/welcome_controller":
-        
+    // http://localhost:8000/api/welcome-controller
+    case "/api/welcome-controller":
+
     break;
 }

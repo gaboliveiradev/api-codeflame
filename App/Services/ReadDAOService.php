@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class ReadDAOService {
+class ReadDaoService {
 
     public $arr_rows = [];
 

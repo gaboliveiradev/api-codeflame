@@ -2,12 +2,12 @@
 
 namespace App\Controller;
 
-use App\Services\ReadDAOService;
+use App\Services\ReadDaoService;
 
-class DAOController {
+class DaoController {
     
     public static function returnRows() {
-        $service = new ReadDAOService();
+        $service = new ReadDaoService();
         echo $service->readDAO();
     }
     
