@@ -7,6 +7,7 @@ use App\Controller\{
     DaoController,
     IndexController,
     ModelController,
+    ReadBootstrapController,
     RotasController,
     WelcomeControllerController
 };
@@ -54,5 +55,15 @@ switch($parse_uri) {
     // http://localhost:8000/api/model
     case "/api/model":
         ModelController::returnRows();
+    break;
+
+    // http://localhost:8000/api/bootstrap-css
+    case "/api/bootstrap-css":
+        ReadBootstrapController::returnRowsCss();
+    break;
+
+    // http://localhost:8000/api/bootstrap-js
+    case "/api/bootstrap-js":
+        ReadBootstrapController::returnRowsJs();
     break;
 }
