@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class ReadRotasServices {
+class ReadRotasService {
 
     public $arr_rows = [];
 

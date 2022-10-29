@@ -2,12 +2,12 @@
 
 namespace App\Controller;
 
-use App\Services\ReadRotasServices;
+use App\Services\ReadRotasService;
 
 class RotasController {
 
     public static function returnRows() {
-        $service = new ReadRotasServices();
+        $service = new ReadRotasService();
         echo $service->readRotas();
     }
 
