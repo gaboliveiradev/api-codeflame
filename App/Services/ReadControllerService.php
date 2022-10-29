@@ -2,12 +2,12 @@
 
 namespace App\Services;
 
-class ReadDAOService {
+class ReadControllerService {
 
     public $arr_rows = [];
 
-    public function readDAO() {
-        $arq = fopen("./Template/DAO/DAO.php", "r");
+    public function readController() {
+        $arq = fopen("./Template/Controller/Controller.php", "r");
         $i = 0;
 
         while(!feof($arq)) {
@@ -20,5 +20,5 @@ class ReadDAOService {
 
         return json_encode($arr_rows);
     }
-    
+
 }

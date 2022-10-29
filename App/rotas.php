@@ -3,10 +3,12 @@
 use App\Controller\{
     AutoloadController,
     ConfigController,
+    ControllerController,
     DAOController,
     IndexController,
     RotasController
 };
+use App\Services\ReadControllerService;
 
 $parse_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
@@ -39,6 +41,11 @@ switch($parse_uri) {
 
     // http://localhost:8000/api/controller
     case "/api/controller":
+        ControllerController::returnRows();
+    break;
+
+    // http://localhost:8000/api/welcome_controller
+    case "/api/welcome_controller":
         
     break;
 }
