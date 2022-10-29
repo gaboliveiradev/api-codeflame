@@ -32,8 +32,13 @@ switch($parse_uri) {
         AutoloadController::returnRows();
     break;
 
-    // http://localhost:8000/api/autoload
-    case "/api/DAO":
+    // http://localhost:8000/api/dao
+    case "/api/dao":
         DAOController::returnRows();
+    break;
+
+    // http://localhost:8000/api/controller
+    case "/api/controller":
+        
     break;
 }
