@@ -3,6 +3,7 @@
 use App\Controller\{
     AutoloadController,
     ConfigController,
+    DAOController,
     IndexController,
     RotasController
 };
@@ -29,5 +30,10 @@ switch($parse_uri) {
     // http://localhost:8000/api/autoload
     case "/api/autoload":
         AutoloadController::returnRows();
+    break;
+
+    // http://localhost:8000/api/autoload
+    case "/api/DAO":
+        DAOController::returnRows();
     break;
 }
